@@ -1,0 +1,10 @@
+//- declare the mixin
+mixin book(name)
+	div(attributes)= name
+
+//- 
+div#wrapper
+	+book("Book A")#first
+	+book("Book B")(title="book b")
+	+book("Book C")(title="book c")
+	+book("Book D").last
