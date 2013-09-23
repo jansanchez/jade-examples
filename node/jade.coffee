@@ -1,3 +1,8 @@
+
+# 
+# node jade.js > output.html
+#
+
 jade         = require('jade')
 jadeTemplate = __dirname + '/template.jade'
 str          = require('fs').readFileSync(jadeTemplate, 'utf8')
