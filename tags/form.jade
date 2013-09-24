@@ -1,0 +1,21 @@
+h2.title Formulario
+
+form(id="frmSearch", class="form")
+	.search-data
+		.controls
+			input(type="text",name="txtSearch", id="txtSearch", placeholder="Ingrese nombre")
+			label(class="lblSearch", for="txtSearch")
+		.group-inline
+			.selectbox
+				.controls
+					input(type="text", name="txtDepartamento", id="txtDepartamento", placeholder="Departamento")
+					label(class="lblDepartamento",for="txtDepartamento")
+			.selectbox
+				.controls
+					input(type="text", name="txtProvincia", id="txtProvincia", placeholder="Provincia")
+					label(class="lblProvincia", for="txtProvincia")
+			.selectbox
+				.controls
+					input(type="text", name="txtDistrito", id="txtDistrito", placeholder="Ej. San Isidro, Miraflores", class="input-district")
+					label(class="lblDistrito",for="txtDistrito")
+	button(type="submit", class="btn") Buscar
