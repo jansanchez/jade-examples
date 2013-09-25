@@ -23,10 +23,6 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		meta(name="language", content="#{page.lang}")
 		meta(name="robots", content="index,follow")
 
-		script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
-		script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-		script(type='text/javascript', src='js/ie.js?v=version')
-
 		meta(name="geo.region", content="PE-LIM")
 		meta(name="geo.placename", content="Cercado de Lima")
 		meta(name="geo.position", content="-12.0478;-77.0622")
@@ -37,12 +33,9 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		meta(property="og:image", content="#{page.img}")
 		link(href="#{page.img}", rel="image_src", type="image/jpeg")
 
+		//- Favicon
 		link(href="#{page.favicon}", rel="icon", type="image/vnd.microsoft.icon")
 		link(href="#{page.favicon}", rel="shortcut icon", type="image/x-icon")
-
-		script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
-		script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-		script(type='text/javascript', src='js/ie.js?v=version')
 
 		meta(name="DC.Title", content="#{page.title}")
 		meta(name="DC.Creator", content="#{page.name}")
@@ -51,24 +44,28 @@ html(lang='#{page.lang}', xmlns:fb='http://ogp.me/ns/fb#')
 		meta(name="DC.Contributor", content="#{page.developer}")
 		meta(name="DC.Language", content="#{page.lang}")
 
+		//- Insertamos nuestros archivos .js si nuestro navegador es menor que IE9
 		//if lt IE 9
 			script(type='text/javascript', src='js/libs/html5shiv.js?v=version')
 			script(type='text/javascript', src='js/libs/selectivizr.js?v=version')
-			script(type='text/javascript', src='js/ie.js?v=version')
 
+		//- Insertamos nuestro .css
 		link(href='css/layout.css?v=version', rel='stylesheet', type='text/css')
-		link(href='css/portada.css?v=version', rel='stylesheet', type='text/css')
 
-		//- open graph
+		//- Open graph
 		meta(property='og:title', content='#{page.title}')
 		meta(property='og:description', content='#{page.description}')
 		meta(property='og:image', content='#{page.img}')
 
 		//- Favicon
-		//-link(rel='apple-touch-icon', href='img/favicon-iphone.png')
-		link(href='img/favicon.ico', rel='shortcut icon', type='image/x-icon')
+		//link(rel='apple-touch-icon', href='img/favicon-iphone.png')
+		link(href="favicon.ico", rel="icon", type="image/vnd.microsoft.icon")
+		link(href="favicon.ico", rel="shortcut icon", type="image/x-icon")
+
+		include partials/style.jade
 	body
 		include partials/header.jade
 		#wrapper
 			block content
 		include partials/footer.jade
+		include partials/scripts.jade

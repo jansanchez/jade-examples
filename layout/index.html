@@ -21,9 +21,6 @@
     <meta name="viewport" content="width=device-width">
     <meta name="language" content="es">
     <meta name="robots" content="index,follow">
-    <script type="text/javascript" src="js/libs/html5shiv.js?v=version"></script>
-    <script type="text/javascript" src="js/libs/selectivizr.js?v=version"></script>
-    <script type="text/javascript" src="js/ie.js?v=version"></script>
     <meta name="geo.region" content="PE-LIM">
     <meta name="geo.placename" content="Cercado de Lima">
     <meta name="geo.position" content="-12.0478;-77.0622">
@@ -34,31 +31,58 @@
     <link href="img/logo.jpg" rel="image_src" type="image/jpeg">
     <link href="img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <script type="text/javascript" src="js/libs/html5shiv.js?v=version"></script>
-    <script type="text/javascript" src="js/libs/selectivizr.js?v=version"></script>
-    <script type="text/javascript" src="js/ie.js?v=version"></script>
     <meta name="DC.Title" content="titulo de la pagina">
-    <meta name="DC.Creator" content="undefined">
+    <meta name="DC.Creator" content="portal web">
     <meta name="DC.Description" content="Descripcion de la pagina">
-    <meta name="DC.Publisher" content="undefined">
+    <meta name="DC.Publisher" content="portal web">
     <meta name="DC.Contributor" content="developer">
     <meta name="DC.Language" content="es">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/libs/html5shiv.js?v=version"></script>
     <script type="text/javascript" src="js/libs/selectivizr.js?v=version"></script>
-    <script type="text/javascript" src="js/ie.js?v=version"></script>
     <![endif]-->
     <link href="css/layout.css?v=version" rel="stylesheet" type="text/css">
-    <link href="css/portada.css?v=version" rel="stylesheet" type="text/css">
     <meta property="og:title" content="titulo de la pagina">
     <meta property="og:description" content="Descripcion de la pagina">
     <meta property="og:image" content="img/logo.jpg">
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <!--link(rel='apple-touch-icon', href='img/favicon-iphone.png')-->
+    <link href="favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <style type="text/css">
+      body{
+       margin : 0;
+       padding : 0;
+      }
+      header,footer{
+       margin : 0 auto;
+       padding : 20px 5px;
+       position : relative;
+       width : 1000px;
+      }
+      #wrapper{
+       background-color : #EEEEEE;
+       margin : 0 auto;
+       padding : 20px 5px;
+       position : relative;
+       width : 1000px;
+      }
+    </style>
   </head>
   <body>
-    <header>texto del header </header>
+    <header>
+      <h1>Texto Principal</h1>
+    </header>
     <div id="wrapper">
+      <div>contenido del index</div>
     </div>
-    <footer>texto del footer</footer>
+    <footer>
+      <p>Fin de la página</p>
+    </footer>
+    <script type="text/javascript">
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>
