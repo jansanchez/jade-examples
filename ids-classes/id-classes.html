@@ -1,8 +1,10 @@
 
 <h1 id="title">IDs & Classes with Jade</h1>
-<div>
-  <input id="txtNombre" type="text" placeholder="Nombre"/>
-  <input id="txtEmail" type="text" placeholder="Email"/>
-  <button data-action="submit" class="btn">Enviar</button>
-  <button data-action="reset" class="send">Enviar</button>
+<div class="content">
+  <form action="post/new" name="frmNew" method="post">
+    <input id="txtNombre" type="text" placeholder="Nombre"/>
+    <input id="txtEmail" type="email" placeholder="Email"/>
+    <button type="submit" class="btn">Enviar</button>
+    <button type="reset" class="send">Reset</button>
+  </form>
 </div>

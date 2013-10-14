@@ -1,6 +1,7 @@
 h1#title IDs & Classes with Jade
-div
-	input#txtNombre(type="text", placeholder="Nombre")
-	input(id="txtEmail", type="text", placeholder="Email")
-	button.btn(data-action="submit") Enviar
-	button(class="send", data-action="reset") Enviar
+div.content
+	form(action="post/new", name="frmNew", method="post")
+		input#txtNombre(type="text", placeholder="Nombre")
+		input(id="txtEmail", type="email", placeholder="Email")
+		button.btn(type="submit") Enviar
+		button(class="send", type="reset") Reset

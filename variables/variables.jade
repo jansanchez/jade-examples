@@ -1,0 +1,23 @@
+
+//- declaración de variables en Jade
+- titulo      = 'Paso 3'
+- yo          = {}
+- yo.nombre   = 'Jan'
+- yo.apellido = 'Sanchez'
+- yo.edad     = 26
+
+- booleano = false
+- ruc      = "Ruc"
+- boleta   = "Boleta"
+
+
+//- markup
+h1= titulo
+
+h2= "Sr. " + yo.nombre + " " + yo.apellido
+
+h3 Tiene #{yo.edad} Años de edad
+
+h4= "Su nombre es de " + yo.nombre.length + " letras!"
+
+h5 Y usted eligió: #{booleano ? ruc : boleta}
