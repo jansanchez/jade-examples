@@ -1,0 +1,7 @@
+
+- estaciones = ['Verano', 'Otoño', 'Invierno', 'Primavera']
+
+select(name="estaciones")
+	option(value="") Seleccione una Estación
+	each estacion, i in estaciones
+		option(value=i) Estación: #{estacion}
