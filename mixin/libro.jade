@@ -1,0 +1,10 @@
+//- declaramos el mixin
+mixin libro(name)
+	div(attributes)= name
+
+//- markup
+div#wrapper
+	+libro("Libro A")#first
+	+libro("Libro B")(title="libro b")
+	+libro("Libro C")(title="libro c")
+	+libro("Libro D").last

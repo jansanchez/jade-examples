@@ -1,0 +1,16 @@
+
+//- declaramos un array
+- usuarios = []
+- usuarios.push({nombre : 'Jan Sanchez',   email : 'joejansanchez@gmail.com'})
+- usuarios.push({nombre : 'Silena Nayrim', email : 'silena@nayrim.com'})
+- usuarios.push({nombre : 'Jamir Kaleb',   email : 'jamir@kaleb.com'})
+
+//- declaramos el mixin
+mixin userRow(nombre, email)
+	li #{nombre} (#{email})
+
+//- 
+ul#users
+	for usuario in usuarios
+		+userRow(usuario.nombre, usuario.email)
+
