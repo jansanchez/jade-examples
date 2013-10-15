@@ -1,0 +1,12 @@
+
+- var page = { description: 'Descripción de la página' }
+
+doctype 5
+html(lang="es")
+head
+	title Titulo de la pagina
+	- if (page.description) {
+	meta(name="description", content="#{page.description}")
+	- }
+body
+	p Lorem ipsum
