@@ -1,10 +1,12 @@
 
-- var page = { description: 'Descripción de la página' }
+- page = {}
+- page.title       = 'Titulo de la página'
+- page.description = 'Descripción de la página'
 
 doctype 5
 html(lang="es")
 head
-	title Titulo de la pagina
+	title= page.title
 	- if (page.description) {
 	meta(name="description", content="#{page.description}")
 	- }

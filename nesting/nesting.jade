@@ -1,16 +1,19 @@
 
-//- forma normal
-ul
-  li.first
-    a(href='#') foo
-  li
-    a(href='#') bar
-  li.last
-    a(href='#') baz
+//- Anidamiento en Jade
 
-//- Block Expansion
 ul
-  li.first: a(href='#') foo
-  li: a(href='#') bar
-  li.last: a(href='#') baz
+	li
+		a(href='#') uno
+	li
+		a(href='#') dos
+	li
+		a(href='#') tres
+
+//- Anidamiento con Expansión de bloque
+
+ul
+	li: a(href='#') uno
+	li: a(href='#') dos
+	li: a(href='#') tres
+
 

@@ -1,8 +1,8 @@
-//- declaramos el mixin
+//- Declaramos el mixin
 mixin libro(name)
 	div(attributes)= name
 
-//- markup
+//- Markup
 div#wrapper
 	+libro("Libro A")#first
 	+libro("Libro B")(title="libro b")
