@@ -24,3 +24,9 @@ para la presentación que estoy preparando.
 * Template inheritance
 * Block append / prepend
 * Template script tags
+
+
+URL of presentation is:
+-----------------------
+
+[https://speakerdeck.com/jansanchez27/jade-language-html-preprocessor](https://speakerdeck.com/jansanchez27/jade-language-html-preprocessor)
