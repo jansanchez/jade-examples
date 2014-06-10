@@ -1,6 +1,0 @@
-ul#userList
-	each user, name in users
-		if user.isA == 'adult'
-			li(class='user-' + name) #{name} is a adult
-		else
-			li(class='user-' + name) #{name} #{user.email}

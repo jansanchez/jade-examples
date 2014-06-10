@@ -1,0 +1,11 @@
+{
+  "name": "jade-examples",
+  "description": "jade-examples",
+  "version": "0.2.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "0.1.x",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-jade": "~0.9.1"
+  }
+}

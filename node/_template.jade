@@ -1,0 +1,8 @@
+// markup
+
+ul#userList
+	each user, name in users
+		if user.isA == 'man'
+			li(class='user-' + name) #{name} is a man
+		else
+			li(class='user-' + name) #{name} is a woman
